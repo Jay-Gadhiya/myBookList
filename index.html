@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <nav id="msg"></nav>
+    <h1>My Book List📔📕📘</h1>
+    <hr id="hr" />
+    <!-- inputs -->
+    <div>
+      <form id="form">
+        <div class="label">
+          <label class="lb" for="bookName">Name</label>
+          <input id="bookName" type="text" placeholder="book name" />
+        </div>
+        <div class="label">
+          <label class="lb" for="author">Author</label>
+          <input id="author" type="text" placeholder="Author name" />
+        </div>
+
+        <!-- Types -->
+        <div>
+          <label for="fiction">Type</label>
+          <input
+            id="fiction"
+            type="radio"
+            value="fiction"
+            name="type"
+            checked
+          />
+          <label for="computer">Fiction</label>
+          <input
+            id="computer"
+            type="radio"
+            value="Computer Programming"
+            name="type"
+          />
+          <label for="type">Computer Programming</label>
+          <input id="cooking" type="radio" value="Cooking" name="type" />
+          <label for="type">Cooking</label>
+        </div>
+        <br />
+        <br />
+        <!-- Button -->
+        <button type="submit" id="button">Add Book</button>
+      </form>
+    </div>
+    <hr id="hr" />
+
+    <!-- table -->
+    <div>
+      <h2>Your Books</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="tup" scope="col">Name</th>
+            <th class="tup" scope="col">Author</th>
+            <th class="tup" scope="col">Type</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
