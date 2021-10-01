@@ -1,5 +1,7 @@
 import "./styles.css";
 
+let num = 9;
+
 function Book(name, author, type) {
   this.name = name;
   this.author = author;
